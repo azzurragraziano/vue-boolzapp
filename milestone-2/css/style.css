@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+img {
+    width: 50px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.app-wrapper {
+    background-color: #baebba;
+    width: 100%;
+    height: 100vh;
+    min-width: 950px;
+}
+
+.flex-container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    color: inherit;
+    padding: 0 5px;
+}
+
+.heading {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.heading .col:first-child {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    font-size: 20px;
+    color: #b7b2b2;
+}
+
+/* MAIN */
+main {
+    height: 95%;
+    width: 80%;
+    display: flex;
+}
+
+/* LEFT NAV */
+.left-nav {
+    background-color: white;
+    width: 35%;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* disclaimer */
+.disclaimer {
+    padding: 20px 10px;
+    background-color: #8edafb;
+    display: flex;
+    align-items: center;
+}
+
+.disclaimer div {
+    padding-left: 5px;
+    text-align: left;
+}
+
+.disclaimer-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.disclaimer-icon i {
+    color: #8edafb;
+}
+
+.disclaimer-message a {
+    color: gray;
+    font-size: 14px;
+}
+
+/* search area */
+.search-area {
+    background-color: #fafafa;
+    display: flex;
+    padding: 10px;
+}
+
+.search-lens {
+    background-color: white;
+    padding: 5px 20px;
+}
+
+.search-area input {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+}
+
+/* contact list */
+.contacts-list-area {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.contacts-list-area ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-list-area li {
+    padding: 5px 10px;
+    background-color: white;
+    border-bottom: 1px solid #dfdcdc;
+    display: flex;
+}
+
+.contacts-list-area li:first-child {
+    padding-top: 10px;
+}
+
+.contacts-list-area li:last-child {
+    padding-bottom: 10px;
+}
+
+/* CHAT AREA */
+.chat-area
+{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.info-contact > div {
+    font-size: 14px;
+    color: gray;
+}
+
+/* messages area */
+.messages-area {
+    flex-grow: 1;
+    /* background-image: url('../img/mine.jpg'); */
+    background-color: beige;
+    padding: 3.2rem;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    clear: both;
+    min-width: 30%;
+    max-width: 55%;
+    position: relative;
+    word-break: break-word;
+}
+
+.sent {
+    background-color: #d5f9ba;
+    float: right;
+}
+
+.received {
+    background-color: white;
+    float: left;
+}
+
+.message-date {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 13px;
+    color: gray;
+}
+
+/* message actions */
+.message-actions {
+    background-color: #f3eeea;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.message-actions-input {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.message-actions-input input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+}
