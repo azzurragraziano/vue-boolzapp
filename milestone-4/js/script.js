@@ -124,13 +124,19 @@ var app = new Vue (
 
 					}, 1000);
 				}
-			},/* per ogni elemento vedere se il nome del contact contiene il testo dato, se lo contiene il contatto sarà vicibile */ 
+			},
+			/* per ogni elemento verifica se il nome del contact contiene il testo dato,
+			se lo contiene il contatto sarà visibile */ 
 			searchedContacts () {
+				// trasformo il testo inserito dall'utente in minuscolo
 				const searchedText = this.searchedContactsText.toLowerCase();
 				
 				this.contacts.forEach(element => {
+					// trasformo il nome dell'utente in minuscolo
 					const contactNameLower = element.name.toLowerCase();
 					
+					// se il nome include il testo inserito dall'utente,
+					// il contatto sarà visibile, altrimenti no
 					if(contactNameLower.includes(searchedText)) {
 						element.visible = true;
 					} else {
