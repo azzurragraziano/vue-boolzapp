@@ -150,6 +150,10 @@ main {
     padding-bottom: 10px;
 }
 
+.contact-list-area .active {
+    background-color: #b7b2b2;
+}
+
 /* CHAT AREA */
 .chat-area
 {

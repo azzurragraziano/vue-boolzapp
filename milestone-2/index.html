@@ -76,7 +76,11 @@
                     <!-- contacts list area -->
                     <div class="contacts-list-area">
                         <ul>
-                            <li v-for="(element, index) in contacts" @click="currentActiveChat(index)">
+                            <li v-for="(element, index) in contacts" 
+                                @click="currentActiveChat(index)" 
+                                class="single-contact" 
+                                :class="{'active': index === activeChat}" 
+                            >
                                 <img :src="'../img/avatar' + element.avatar + '.jpg'" :alt="element.name">
                                 <div>{{element.name}}</div>
                             </li>
