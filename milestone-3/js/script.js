@@ -119,7 +119,7 @@ var app = new Vue (
 							status: 'received'
 						};
 
-						this.contacts[this.activeChat].messages.push(message);
+						this.contacts[this.activeChat].messages.push(reply);
 
 					}, 1000);
 				}
