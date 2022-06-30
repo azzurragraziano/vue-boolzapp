@@ -168,8 +168,7 @@ main {
 /* messages area */
 .messages-area {
     flex-grow: 1;
-    /* background-image: url('../img/mine.jpg'); */
-    background-color: beige;
+    background-image: url('../../img/mine.jpg');
     padding: 3.2rem;
     overflow-y: auto;
 }
